@@ -1,23 +1,18 @@
 // app/layout.tsx
-import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import Sidebar from "./components/Sidebar";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Meriam Maatallah - Ingénieure Full Stack",
-  description: "Développeuse Full Stack Junior | Spring Boot, Angular, React, Next.js | Tunisie",
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className="antialiased flex">
+        <Sidebar />
+
+        {/* main content */}
+        <main className="ml-48 w-full">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

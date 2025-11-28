@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-primary text-white">
+    <section id="contact" className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl shadow-xl p-8 hover:bg-white/10 transition">
       <div className="container px-6 mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -13,7 +13,7 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-4xl md:text-5xl font-bold mb-12"
         >
-          Me contacter
+          Contact
         </motion.h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
@@ -27,7 +27,7 @@ export default function Contact() {
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }}>
             <MapPin className="h-10 w-10 mx-auto mb-4" />
-            <p className="text-lg">Tunis, Tunisie</p>
+            <p className="text-lg">Rades,  Ben arous Tunisia</p>
           </motion.div>
         </div>
 
@@ -37,7 +37,7 @@ export default function Contact() {
           whileHover={{ scale: 1.05 }}
         >
           <Send className="h-6 w-6" />
-          Envoyer un message
+          send me message
         </motion.a>
       </div>
     </section>

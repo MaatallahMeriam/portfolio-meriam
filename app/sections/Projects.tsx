@@ -6,18 +6,29 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "BASKEL – Gestion des cyclistes",
+    title: "BASKEL – Cyclist Management Platform",
     year: "2023",
-    tech: "React.js • Node.js • SQL",
-    description: "Application web full-stack complète : API REST + interface moderne et fluide.",
-    github: "https://github.com/MaatallahMeriam", // à remplacer par le vrai lien plus tard
+    tech: "React.js • Node.js • Express.js • PostgreSQL • REST API • JWT Authentication • Responsive UI",
+    description:
+      "Full-stack web platform for managing cyclists, including CRUD operations, secure REST API, authentication/authorization, and a responsive dashboard built with React and Tailwind CSS.",
+    github: "https://github.com/MaatallahMeriam",
     demo: "#",
   },
   {
-    title: "Système de Gestion de la Charge d’Enseignement",
+    title: "Teaching Load Management System",
     year: "2022",
-    tech: "Spring Boot • React.js • JPA/Hibernate",
-    description: "Plateforme sécurisée avec rôles, formulaires dynamiques et communication API REST.",
+    tech: "Spring Boot • React.js • JPA/Hibernate • PostgreSQL • REST API • JWT Security • Role-based Access Control",
+    description:
+      "Secure academic management system handling teaching loads. Features dynamic forms, structured API communication, role-based access, and a React-driven frontend.",
+    github: "https://github.com/MaatallahMeriam",
+    demo: "#",
+  },
+  {
+    title: "Interactive Image Classification Interface",
+    year: "2023",
+    tech: "Python • TensorFlow / Keras • OpenCV • Flask • React.js • REST API • Model Evaluation Metrics • Image Preprocessing",
+    description:
+      "Developed an interactive interface for image classification models. Involved preprocessing techniques (normalization, resizing, augmentation), building CNN models, evaluating performance metrics (accuracy, F1-score), and integrating backend ML models with a React frontend.",
     github: "https://github.com/MaatallahMeriam",
     demo: "#",
   },
@@ -25,7 +36,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projets" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section
+      id="projects"
+      className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl shadow-xl p-8 hover:bg-white/10 transition"
+    >
       <div className="container px-6 mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -34,11 +48,11 @@ export default function Projects() {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-5xl font-bold text-center mb-16"
         >
-          Projets académiques
+          Academic Projects & Experiences
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {projects.map((p, i) => (
+          {projects.map((project, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, scale: 0.9 }}
@@ -49,17 +63,20 @@ export default function Projects() {
             >
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
-                  {p.title}
+                  {project.title}
                 </h3>
+
                 <p className="text-primary font-medium mb-4">
-                  {p.year} • {p.tech}
+                  {project.year} • {project.tech}
                 </p>
+
                 <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                  {p.description}
+                  {project.description}
                 </p>
+
                 <div className="flex gap-6">
                   <a
-                    href={p.github}
+                    href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-primary hover:underline font-medium"
@@ -67,14 +84,15 @@ export default function Projects() {
                     <Github className="h-5 w-5" />
                     Code
                   </a>
+
                   <a
-                    href={p.demo}
+                    href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-primary hover:underline font-medium opacity-70"
                   >
                     <ExternalLink className="h-5 w-5" />
-                    Démo
+                    Demo
                   </a>
                 </div>
               </div>

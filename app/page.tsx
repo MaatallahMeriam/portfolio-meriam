@@ -1,20 +1,23 @@
 // app/page.tsx
+
 import Hero from "./sections/Hero";
 import About from "./sections/About";
-import Experience from "./sections/Experience";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
+import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
-
+import Certifications from "./sections/Certifications";
 export default function Home() {
   return (
     <>
       <Hero />
       <About />
-      <Experience />
       <Skills />
+      <Certifications />
       <Projects />
+      <Experience />
       <Contact />
+      
     </>
   );
 }
