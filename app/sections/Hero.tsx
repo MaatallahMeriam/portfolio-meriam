@@ -34,7 +34,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="/RESUME__Meriam_Maatallahpdf"
+                href="/resume_Meriam_Maatallah.pdf"
                 download
                 className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition"
               >
