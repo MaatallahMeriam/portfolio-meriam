@@ -1,9 +1,12 @@
+/* 1. TOUT EN HAUT : les @import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* 2. Ensuite Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
+/* 3. Tes règles personnalisées */
 * {
   scroll-behavior: smooth;
 }
@@ -14,4 +17,11 @@ body {
 
 ::selection {
   @apply bg-primary/20 text-primary;
+}
+
+/* Dark mode si tu veux (optionnel) */
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-slate-900 text-slate-100;
+  }
 }
