@@ -1,15 +1,11 @@
-// app/layout.tsx
 import "./globals.css";
-import Sidebar from "./components/Sidebar";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body className="antialiased flex">
-        <Sidebar />
-
+      <body className="antialiased">
         {/* main content */}
-        <main className="ml-48 w-full">
+        <main className="w-full">
           {children}
         </main>
       </body>

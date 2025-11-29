@@ -7,10 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-   <section
-  id="home"
-  className="min-h-screen flex items-center justify-center bg-hero-gradient dark:bg-hero-gradient"
->
+   <section id="home" className="min-h-screen flex items-center justify-center">
 
       <div className="container px-6 mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
