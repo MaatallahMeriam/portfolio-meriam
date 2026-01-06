@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Meriam Maatallah - Professional Portfolio
+
+A modern, professional portfolio website built with Next.js, TypeScript, and Tailwind CSS, showcasing full-stack development expertise and software engineering projects.
+
+## Features
+
+- **Modern Design**: Clean, professional design with smooth animations and transitions
+- **Responsive Layout**: Fully responsive across all devices (mobile, tablet, desktop)
+- **Smooth Navigation**: Fixed navigation bar with smooth scrolling
+- **Comprehensive Sections**:
+  - Hero section with professional introduction
+  - About section highlighting core competencies
+  - Experience timeline with detailed work history
+  - Skills showcase with technology proficiency
+  - Projects portfolio with key achievements
+  - Education background
+  - Professional certifications
+  - Contact information with social links
+
+## Technology Stack
+
+- **Framework**: Next.js 13 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Deployment Ready**: Optimized for Vercel/Netlify
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Build for Production
 
-## Learn More
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Main portfolio page
+│   └── globals.css         # Global styles and animations
+├── components/
+│   ├── sections/           # Portfolio sections
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Education.tsx
+│   │   ├── Certifications.tsx
+│   │   └── Contact.tsx
+│   ├── ui/                 # Reusable UI components (shadcn/ui)
+│   ├── Navigation.tsx      # Main navigation component
+│   └── Footer.tsx          # Footer component
+└── public/                 # Static assets
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Customization
 
-## Deploy on Vercel
+### Updating Personal Information
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+All personal information is stored in the component files. To update:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Contact Info**: Edit `components/sections/Contact.tsx`
+2. **Experience**: Edit `components/sections/Experience.tsx`
+3. **Projects**: Edit `components/sections/Projects.tsx`
+4. **Skills**: Edit `components/sections/Skills.tsx`
+5. **Social Links**: Update URLs in `Hero.tsx`, `Contact.tsx`, and `Footer.tsx`
+
+### Color Scheme
+
+The portfolio uses a professional blue-teal gradient color scheme. To customize colors, modify the Tailwind classes in the components:
+
+- Primary: `blue-600`, `blue-500`
+- Secondary: `teal-600`, `teal-500`
+- Background: `slate-50`, `slate-100`
+- Text: `slate-900`, `slate-700`
+
+### Adding New Sections
+
+1. Create a new component in `components/sections/`
+2. Import and add it to `app/page.tsx`
+3. Add navigation link in `components/Navigation.tsx`
+
+## Deployment
+
+### Deploy to Vercel
+
+1. Push your code to GitHub
+2. Visit [vercel.com](https://vercel.com)
+3. Import your repository
+4. Deploy with default settings
+
+### Deploy to Netlify
+
+1. Push your code to GitHub
+2. Visit [netlify.com](https://netlify.com)
+3. Import your repository
+4. Build command: `npm run build`
+5. Publish directory: `.next`
+
+## Performance Optimizations
+
+- Static page generation for optimal performance
+- Optimized images and assets
+- Code splitting for faster initial load
+- Smooth animations with CSS transitions
+- Responsive design for all screen sizes
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers
+
+## License
+
+This project is open source and available for personal use.
+
+## Contact
+
+**Meriam Maatallah**
+- Email: mkdmeriam22@gmail.com
+- LinkedIn: [Maatallah Meriam](https://www.linkedin.com/in/Maatallah%20Meriam)
+- GitHub: [MaatallahMeriam](https://github.com/MaatallahMeriam)
+- Portfolio: [https://portfolio-meriam.vercel.app](https://portfolio-meriam.vercel.app)
+
+---
+
+Built with Next.js, TypeScript, and Tailwind CSS
