@@ -37,7 +37,7 @@ export default function About() {
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-8"></div>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
             I'm a passionate Software Engineer with a strong foundation in both
-            front-end and back-end development. Currently working at Simplexity,
+            front-end and back-end development. Currently working as Full-Stack Developer,
             I specialize in creating robust, scalable web applications that solve
             real-world business problems.
           </p>
@@ -70,7 +70,7 @@ export default function About() {
           <div className="space-y-4 text-slate-600">
             <p>
               As a Computer Engineering graduate specializing in Software
-              Engineering from ISIMM, I bring a comprehensive skill set spanning
+              Engineering from ISIM Monastir, I bring a comprehensive skill set spanning
               multiple technologies and frameworks. My experience includes:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
@@ -78,11 +78,11 @@ export default function About() {
                 Developing enterprise-grade ERP solutions with Next.js and Prisma ORM
               </li>
               <li>
-                Building complete HR digitalization platforms from scratch using
-                Spring Boot, Angular, and PostgreSQL
+                Building complete digitalization platforms from scratch using
+                Spring Boot, Angular, React and SQL Databases
               </li>
               <li>
-                Integrating AI/ML models for automated employee-project matching
+                Integrating AI/ML models for automated features
                 using FastAPI and pre-trained models
               </li>
               <li>
@@ -90,7 +90,7 @@ export default function About() {
                 access control
               </li>
               <li>
-                Creating dynamic form generation systems with custom drag-and-drop
+                Creating dynamic custom
                 interfaces
               </li>
             </ul>

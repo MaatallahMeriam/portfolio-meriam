@@ -33,7 +33,22 @@ const certifications = [
       'Cost Optimization',
     ],
   },
-];
+  {
+      title: 'Generative AI',
+      issuer: 'LinkedIn & Microsoft',
+      type: 'Certification',
+      icon: Award, // tu peux choisir l'icône que tu veux
+      description:
+        'Practical and theoretical training on generative AI, including large language models, prompt engineering, and AI-driven application development.',
+      skills: [
+        'Generative AI',
+        'Prompt Engineering',
+        'AI Integration',
+        'Machine Learning',
+        'Natural Language Processing',
+      ],
+    },
+  ];
 
 const languages = [
   {

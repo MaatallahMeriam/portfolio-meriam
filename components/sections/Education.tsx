@@ -23,11 +23,7 @@ const education = [
     period: '2020',
     description:
       'Strong foundation in mathematics and sciences, developing analytical and problem-solving skills.',
-    highlights: [
-      'Focus on Mathematics and Computer Science',
-      'Strong analytical foundation',
-      'Technical curriculum preparation',
-    ],
+    
   },
 ];
 
@@ -72,19 +68,9 @@ export default function Education() {
                   </div>
                   <p className="text-slate-600 mb-4">{edu.description}</p>
                   <div>
-                    <h4 className="font-semibold text-slate-900 mb-2">
-                      Highlights:
-                    </h4>
+                    
                     <ul className="space-y-1">
-                      {edu.highlights.map((highlight, i) => (
-                        <li
-                          key={i}
-                          className="flex items-start gap-2 text-slate-600"
-                        >
-                          <span className="text-teal-500 mt-1">•</span>
-                          <span>{highlight}</span>
-                        </li>
-                      ))}
+                    
                     </ul>
                   </div>
                 </div>
