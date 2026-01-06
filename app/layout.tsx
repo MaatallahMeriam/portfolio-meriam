@@ -11,20 +11,20 @@ export const metadata: Metadata = {
     title: 'Meriam Maatallah | Full Stack Software Engineer',
     description: 'Junior Full Stack Web Developer specializing in Next.js, React, Angular, Spring Boot, and AI/ML integration.',
     images: [
-      {
-        url: 'https://bolt.new/static/og_default.png',
-      },
-    ],
+    {
+      url: '/images/meriam.jpg', // <-- ton image locale
+    },
+  ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Meriam Maatallah | Full Stack Software Engineer',
     description: 'Junior Full Stack Web Developer specializing in Next.js, React, Angular, Spring Boot, and AI/ML integration.',
-    images: [
-      {
-        url: 'https://bolt.new/static/og_default.png',
-      },
-    ],
+     images: [
+    {
+      url: '/images/meriam.jpg', // <-- ton image locale
+    },
+  ],
   },
 };
 
